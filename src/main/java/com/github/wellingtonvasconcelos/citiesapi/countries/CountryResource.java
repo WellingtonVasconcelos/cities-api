@@ -1,7 +1,7 @@
-package com.github.wellingtonvasconcelos.citiesapi;
+package com.github.wellingtonvasconcelos.citiesapi.countries;
 
 import com.github.wellingtonvasconcelos.citiesapi.countries.Country;
-import com.github.wellingtonvasconcelos.citiesapi.repository.CountryRepository;
+import com.github.wellingtonvasconcelos.citiesapi.countries.repository.CountryRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
 import java.util.Optional;
 
 
