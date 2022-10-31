@@ -1,13 +1,20 @@
-package com.github.wellingtonvasconcelos.citiesapi.staties;
+package com.github.wellingtonvasconcelos.citiesapi.staties.entities;
 
-import com.github.wellingtonvasconcelos.citiesapi.countries.Country;
+
+import com.github.wellingtonvasconcelos.citiesapi.countries.entities.Country;
 import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
+import java.util.List;
+import javax.persistence.Basic;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 import org.hibernate.annotations.TypeDefs;
-
-import javax.persistence.*;
-import java.util.List;
 
 @Entity(name = "State")
 @Table(name = "estado")
@@ -27,8 +34,8 @@ public class State {
     private Integer ibge;
 
   /* 1st
-    @Column(name = "pais")
-    private Integer countryId;*/
+  @Column(name = "pais")
+  private Integer countryId;*/
 
     // 2nd - @ManyToOne
     @ManyToOne
@@ -41,25 +48,6 @@ public class State {
     private List<Integer> ddd;
 
     public State() {
-    }
-
-    /**
-     *
-     * @param id
-     * @param name
-     * @param uf
-     * @param ibge
-     * @param country
-     * @param ddd
-     */
-    public State(Long id, String name, String uf, Integer ibge,
-                 Country country, List<Integer> ddd) {
-        this.id = id;
-        this.name = name;
-        this.uf = uf;
-        this.ibge = ibge;
-        this.country = country;
-        this.ddd = ddd;
     }
 
     public Long getId() {

@@ -1,5 +1,7 @@
-package com.github.wellingtonvasconcelos.citiesapi.staties;
+package com.github.wellingtonvasconcelos.citiesapi.staties.resources;
 
+import com.github.wellingtonvasconcelos.citiesapi.staties.entities.State;
+import com.github.wellingtonvasconcelos.citiesapi.staties.repository.StateRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

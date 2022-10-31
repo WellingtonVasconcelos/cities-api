@@ -1,6 +1,6 @@
-package com.github.wellingtonvasconcelos.citiesapi.countries;
+package com.github.wellingtonvasconcelos.citiesapi.countries.resources;
 
-import com.github.wellingtonvasconcelos.citiesapi.countries.Country;
+import com.github.wellingtonvasconcelos.citiesapi.countries.entities.Country;
 import com.github.wellingtonvasconcelos.citiesapi.countries.repository.CountryRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
