@@ -1,4 +1,4 @@
-package com.github.wellingtonvasconcelos.citiesapi.staties.entities;
+package com.github.wellingtonvasconcelos.citiesapi.states.entities;
 
 
 import com.github.wellingtonvasconcelos.citiesapi.countries.entities.Country;
